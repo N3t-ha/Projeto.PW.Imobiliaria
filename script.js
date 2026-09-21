@@ -5,7 +5,7 @@ const ARQUIVOS_CACHE = [
     './style.css',
     './script.js',
     './manifest.json',
-    './icon-192_2.png',
+    './icon-192.png',
     './icon-512.png'
 ];
 
