@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realitas Imóveis | Discrição e Segurança</title>
+    <!-- OBRIGATÓRIO PARA O PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#121212">
+</head>
+<body>
+    <header id="inicio">
+        <div class="logo">
+            <h1>Realitas <span>Imóveis</span></h1>
+        </div>
+        <p>Encontre a contenção... digo, a propriedade perfeita para suas necessidades.</p>
+    </header>
+
+    <!-- NOVA BARRA DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#imoveis">Catálogo de Imóveis</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="imoveis" class="imoveis">
+            
+            <!-- NOVO: BAR SUVACO SECO -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=400&q=80" alt="Fachada de Bar">
+                <h3>Ponto Comercial "Suvaco Seco"</h3>
+                <p>Tradicional estabelecimento com salão principal e um subsolo muito... interessante. Ideal para encontros noturnos discretos, bandas locais e armazenamento de itens peculiares longe de curiosos.</p>
+                <div class="botoes">
+                    <button class="btn-detalhes" onclick="verDetalhes('Suvaco Seco')">Detalhes</button>
+                    <button class="btn-agendar" onclick="agendarVisita()">Agendar</button>
+                </div>
+            </div>
+
+<!-- NOVO: ORFANATO SANTA MENFREDA (COM EASTER EGG DO ANFITRIÃO) -->
+            <div class="card">
+                <!-- Imagem gerada por IA com a pequena referência neon na janela -->
+                <img src="https://image.pollinations.ai/prompt/A%20realistic%20creepy%20abandoned%20gothic%20orphanage%20building%20at%20night.%20In%20a%20dark%20upper%20window,%20a%20very%20small%20glowing%20neon%20purple%20and%20green%20comedy%20theater%20mask.%20Dark,%20gloomy,%20highly%20detailed,%20photorealistic?width=400&height=250&nologo=true" alt="Casarão Santa Menfreda">
+                
+                <h3>Casarão Santa Menfreda</h3>
+                <p>Antiga instituição histórica. Estrutura maciça, múltiplos quartos e corredores labirínticos. Requer limpeza profunda de cinzas. Aconselhamos fortemente visitas apenas durante o dia. E, por favor, ignorem convites para participar de qualquer tipo de "jogo".</p>
+                <div class="botoes">
+                    <button class="btn-detalhes" onclick="verDetalhes('Santa Menfreda')">Detalhes</button>
+                    <button class="btn-agendar" onclick="agendarVisita()">Agendar</button>
+                </div>
+            </div>
+
+            <!-- GALPÃO -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="Galpão">
+                <h3>Galpão Industrial - SP</h3>
+                <p>Espaço amplo com paredes de concreto de 50cm e forro de chumbo. Perfeito para "projetos especiais" e contenção de itens sensíveis à luz ou à realidade.</p>
+                <div class="botoes">
+                    <button class="btn-detalhes" onclick="verDetalhes('Galpão Industrial')">Detalhes</button>
+                    <button class="btn-agendar" onclick="agendarVisita()">Agendar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- NOVA SEÇÃO SOBRE -->
+        <section id="sobre" class="sobre">
+            <h2>Por que escolher a Realitas?</h2>
+            <p>Nossos corretores são treinados para lidar com o incomum. Garantimos contratos blindados e sigilo absoluto. O que acontece nas nossas propriedades, fica nas nossas propriedades. Mantenha o equilíbrio, feche negócio conosco.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Realitas Imóveis. O que não é visto, não é temido.</p>
+    </footer>
+
+    <!-- Registro do Service Worker e Funções dos Botões -->
+    <script src="script.js"></script>
+</body>
+</html>
